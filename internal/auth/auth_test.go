@@ -8,7 +8,7 @@ import (
 func TestSplit(t *testing.T) {
 	headers := make(http.Header)
 	apiKey := "sk-12i9319"
-	headers.Add("Authorization", "ApiKey "+apiKey)
+	headers.Add("Authorization", "Api "+apiKey)
 	resApiKey, err := GetAPIKey(headers)
 	if err != nil {
 		t.Fatalf("Error encountered %v", err)
